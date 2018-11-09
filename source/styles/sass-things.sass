@@ -1,0 +1,30 @@
+//colors
+$accent-color-blue: #4af7f7
+$accent-color-pink: #fa59fa
+$hint-color: #a4a4a4
+$light-border-color: #cecece
+$error-color: #ff3d43
+$white-color: #ffffff
+$black-color: #000000
+
+//etc
+$min-width: 320px
+$common-transition-duration: .3s
+$header-height: 3rem
+$brightness-amount: 105%
+=brightness-on-hover
+  &:hover
+    filter: brightness($brightness-amount)
+
+//fonts
+$Poiret: 'Poiret One', cursive
+$OpenSans: 'Open Sans', sans-serif
+
+//media-queries
+$breakpoint-768: 768px
+$breakpoint-1024: 1024px
+$breakpoint-1366: 1366px
+
+=media-query($breakpoint)
+  @media (min-width: $breakpoint)
+    @content

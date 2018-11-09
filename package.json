@@ -1,0 +1,40 @@
+{
+	"name": "beauty-skin",
+	"version": "1.0.0",
+	"description": "",
+	"scripts": {
+		"start": "webpack-dev-server --env development",
+		"build": "webpack --env production -p",
+		"serv": "static www",
+		"tunnel": "lt --port 9000"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"css-loader": "^1.0.0",
+		"extract-css-chunks-webpack-plugin": "^3.0.11",
+		"extract-loader": "^3.0.0",
+		"extract-text-webpack-plugin": "^4.0.0-beta.0",
+		"file-loader": "^1.1.11",
+		"html-loader": "^0.5.5",
+		"html-webpack-plugin": "^3.2.0",
+		"mini-css-extract-plugin": "^0.4.1",
+		"node-sass": "^4.9.2",
+		"node-static": "^0.7.10",
+		"pug": "^2.0.3",
+		"pug-loader": "^2.4.0",
+		"raw-loader": "^0.5.1",
+		"sass-loader": "^7.1.0",
+		"style-loader": "^0.21.0",
+		"tiny-slider": "^2.8.6",
+		"webpack": "^4.16.3",
+		"webpack-cli": "^3.1.0",
+		"webpack-dev-server": "^3.1.5",
+		"webpack-merge": "^4.1.4"
+	},
+	"dependencies": {
+		"normalize.css": "^8.0.0",
+		"pug-html-loader": "^1.0.7"
+	}
+}
