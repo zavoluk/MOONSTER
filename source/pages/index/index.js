@@ -4,6 +4,7 @@
 import '../../styles/reset.sass'
 import '../../styles/fonts.sass'
 import '../../styles/global.sass'
+import '../../styles/animation.sass'
 
 import '../../components/header/header.sass'
 import '../../components/carousel/carousel.sass'
@@ -17,4 +18,5 @@ import '../../components/footer/footer.sass'
  * js
  */
 import '../../js/onLoad'
+import '../../js/appearWithOpacity'
 import '../../components/carousel/carousel'

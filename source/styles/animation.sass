@@ -1,0 +1,24 @@
+.appear
+  opacity: 0
+  transition: .2s
+  &.active
+    opacity: 1
+    .appear__item
+      animation-name: appearWithOpacity
+      animation-duration: .4s
+      animation-fill-mode: forwards
+
+.appear__item
+  opacity: 0
+
+@for $i from 1 through 5
+  .appear__item[data-cnt="#{$i}"]
+    animation-delay: #{$i/5}s
+
+@keyframes appearWithOpacity
+  from
+    transform: translate(0, 1rem)
+    opacity: 0
+  to
+    transform: translate(0)
+    opacity: 1
