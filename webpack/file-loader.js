@@ -32,8 +32,8 @@ module.exports = () => {
 							options: {
 								name: 'fonts/[name].[ext]',
 								publicPath: function(url) {
-									return url.replace('/fonts', '../')
-								},
+									return url.replace(/fonts/, '../fonts');
+								}
 							}
 						}
 					]
