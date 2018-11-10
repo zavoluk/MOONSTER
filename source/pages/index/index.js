@@ -9,6 +9,7 @@ import '../../components/top-block/top-block.sass'
 import '../../components/carousel/carousel.sass'
 import '../../components/biography/biography.sass'
 import '../../components/brochure/brochure.sass'
+import '../../components/gallery/gallery.sass'
 
 /**
  * js
