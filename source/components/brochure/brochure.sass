@@ -1,0 +1,32 @@
+@import "../../styles/sass-things"
+
+.brochure
+  display: flex
+  flex-flow: column
+  align-items: center
+  background-color: $black-color
+  color: $white-color
+  font-size: 30px
+  line-height: 31px
+  padding: 5.5rem 0
+
+.brochure__title
+  position: relative
+  display: flex
+  align-items: center
+  flex-flow: column
+  &:after
+    display: flex
+    content: ''
+    border-bottom: 1px solid #727171
+    width: 30px
+    margin: 2.8rem 0 2rem
+
+.brochure__link
+  font-size: 18px
+  line-height: 34px
+  text-decoration: solid underline
+  font-family: 'HelveticaNeueLTPro-Lt', sans-serif
+  transition: .2s
+  &:hover
+    opacity: .7
