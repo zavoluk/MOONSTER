@@ -1,7 +1,7 @@
 window.addEventListener('DOMContentLoaded', () => {
-	const main = document.querySelector('.main')
+	const body = document.querySelector('body')
 
 	setTimeout(() => {
-		main.style.opacity = '1'
+		body.style.opacity = '1'
 	}, 100)
 })

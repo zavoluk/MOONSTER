@@ -5,7 +5,9 @@ html(lang='en')
 	meta(name='viewport', content="initial-scale=1.0, width=device-width")
 	title
 		block title
-	body
-		main.main(style="opacity: 0;")
+	body(style="opacity: 0;")
+		header.header
+			include ../components/header/header
+		main.main
 			block content
 		block script
