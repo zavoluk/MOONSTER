@@ -1,3 +1,5 @@
+@import "../../styles/sass-things"
+
 .biography
   display: flex
   flex-flow: column
@@ -25,3 +27,17 @@
   p
    line-height: inherit
    margin-bottom: calc(1.8vw + 5px)
+
+@media screen and (min-width: $breakpoint-1680)
+  .biography
+    flex-flow: row
+    flex-wrap: wrap
+  .biography__title
+    width: 100%
+    text-align: center
+    margin-bottom: 7rem
+  .biography__text
+    flex: 1
+  .biography__photo
+    flex: 1
+    display: flex
