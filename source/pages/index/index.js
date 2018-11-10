@@ -7,6 +7,7 @@ import '../../styles/global.sass'
 
 import '../../components/top-block/top-block.sass'
 import '../../components/carousel/carousel.sass'
+import '../../components/biography/biography.sass'
 
 /**
  * js
