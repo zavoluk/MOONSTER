@@ -1,8 +1,8 @@
 /**
  * style
  */
-import '../../styles/reset.sass'
 import '../../styles/fonts.sass'
+import '../../styles/reset.sass'
 import '../../styles/global.sass'
 import '../../styles/animation.sass'
 
