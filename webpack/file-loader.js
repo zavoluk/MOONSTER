@@ -30,10 +30,9 @@ module.exports = () => {
 						{
 							loader: 'file-loader',
 							options: {
-								useRelativePath: true,
 								name: 'fonts/[name].[ext]',
 								publicPath: function(url) {
-									return url.replace('/fonts', '../fonts')
+									return url.replace('/fonts', '../')
 								},
 							}
 						}
