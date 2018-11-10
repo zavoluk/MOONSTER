@@ -19,7 +19,7 @@ const path = require('path'),
 				'index': PATHS.src + '/pages/index/index.js'
 			},
 			output: {
-				publicPath: '/',
+				publicPath: '',
 				path: PATHS.build,
 				filename: 'js/[name].js'
 			},
