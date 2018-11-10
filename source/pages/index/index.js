@@ -11,6 +11,7 @@ import '../../components/biography/biography.sass'
 import '../../components/brochure/brochure.sass'
 import '../../components/gallery/gallery.sass'
 import '../../components/about/about.sass'
+import '../../components/footer/footer.sass'
 
 /**
  * js
