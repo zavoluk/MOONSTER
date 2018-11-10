@@ -6,7 +6,7 @@ export default function isAnyPartOfElementInViewport(el) {
 	const windowWidth = (window.innerWidth || document.documentElement.clientWidth);
 
 	// http://stackoverflow.com/questions/325933/determine-whether-two-date-ranges-overlap
-	const vertInView = (rect.top <= windowHeight - 200) && ((rect.top + rect.height) >= 0);
+	const vertInView = (rect.top <= windowHeight - 120) && ((rect.top + rect.height) >= 0);
 	const horInView = (rect.left <= windowWidth) && ((rect.left + rect.width) >= 0);
 
 	return (vertInView && horInView);
