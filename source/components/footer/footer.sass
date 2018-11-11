@@ -7,9 +7,10 @@
   margin: calc(6vw + 15px) 10vw
   letter-spacing: .01rem
   a
+    border-bottom: 1px solid transparent
     transition: .2s
     &:hover
-      opacity: .7
+      border-bottom-color: currentColor
 
 .footer__bold
   font-size: calc(3.5vw + 8px)
@@ -27,3 +28,10 @@
   letter-spacing: .03rem
   a
     margin-right: .25rem
+  .twitter
+    position: relative
+    margin-right: .6rem
+    &:after
+      content: '/'
+      position: absolute
+      right: -.5rem
