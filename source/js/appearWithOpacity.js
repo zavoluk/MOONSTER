@@ -2,18 +2,19 @@ import isAnyPartOfElementInViewport from './isElementInViewport'
 
 let items = document.querySelectorAll('.appear'),
 	setAttributeForAppearingElements = (items) => {
-		items.forEach((item) => {
-			let items = item.querySelectorAll('.appear__item')
 
-			items.forEach((item, index) => {
-				item.setAttribute('data-cnt', index + 1)
-			})
-		})
+		for (let i = 0; i < items.length; i++) {
+			let item = items[i].querySelectorAll('.appear__item')
+
+			for (let i = 0; i < item.length; i++) {
+				item[i].setAttribute('data-cnt', i + 1)
+			}
+		}
 	},
 	checkForVisibility = (items) => {
-		items.forEach((item) => {
-			isAnyPartOfElementInViewport(item) || item.offsetTop < window.pageYOffset ? item.classList.add('active') : false
-		})
+		for (let i = 0; i < items.length; i++) {
+			isAnyPartOfElementInViewport(items[i]) || items[i].offsetTop < window.pageYOffset ? items[i].classList.add('active') : false
+		}
 	}
 
 setAttributeForAppearingElements(items)

@@ -23,6 +23,17 @@ const path = require('path'),
 				path: PATHS.build,
 				filename: 'js/[name].js'
 			},
+			module: {
+				rules: [
+					{
+						test: /\.js$/,
+						loader: 'babel-loader',
+						query: {
+							presets: ["@babel/preset-env"]
+						}
+					}
+				]
+			},
 			plugins: [
 				new HtmlWebpackPlugin({
 					filename: 'index.html',
