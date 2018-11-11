@@ -12,7 +12,7 @@ let items = document.querySelectorAll('.appear'),
 	},
 	checkForVisibility = (items) => {
 		items.forEach((item) => {
-			isAnyPartOfElementInViewport(item) ? item.classList.add('active') : false
+			isAnyPartOfElementInViewport(item) || item.offsetTop < window.pageYOffset ? item.classList.add('active') : false
 		})
 	}
 
