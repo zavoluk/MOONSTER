@@ -18,5 +18,6 @@ import '../../components/footer/footer.sass'
  * js
  */
 import '../../js/onLoad'
+import '../../js/iosZoomFix'
 import '../../js/appearWithOpacity'
 import '../../components/carousel/carousel'
