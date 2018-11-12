@@ -4,11 +4,19 @@
 .carousel
   background-color: $black-color
   padding: 1.8rem 0
-  height: 50vw
+  height: 40vw
   min-height: 400px
 
 .carousel-slide
-  width: 30vw
+  width: auto
+  height: 100%
   min-width: 265px
   margin: 0 2.8vw 0 2vw
   transform: translate(1rem)
+
+.swiper-slide-next, .swiper-slide-prev
+  cursor: pointer
+
+@media all and (max-width: $breakpoint-1680)
+  .carousel-slide
+    width: 30vw
